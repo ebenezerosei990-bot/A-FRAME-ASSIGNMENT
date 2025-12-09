@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+
+<body>
+<a-scene>
+
+<a-assets>
+<img id="bg" src="bg.webp.webp">
+</a-assets>
+
+<a-sky src="#bg" radius="30"></a-sky>
+
+<a-entity light="type: directional; intensity:1" position="2 4 2"></a-entity>
+<a-entity light="type: ambient; intensity:0.5"></a-entity>
+
+<a-plane rotation="-90 0 0" width="20" height="20" color="#EED7A1"></a-plane>
+
+<a-plane position="0 1 -5" width="20" height="5" color="#F0E0C0"></a-plane>
+
+<a-entity position="0 2.3 0">
+<a-cone radius-bottom="4" radius-top="0.3" height="1.5" color="#C19A6B"></a-cone>
+<a-cone radius-bottom="4.2" radius-top="0.3" height="1.6" color="#A67B5B" position="0 0.1 0"></a-cone>
+</a-entity>
+
+<a-entity>
+<a-box position="0 1 0" width="3" height="0.15" depth="2" color="#D9A066"></a-box>
+<a-cylinder position="-1.3 0.5 -0.8" radius="0.07" height="1" color="#8B5A2B"></a-cylinder>
+<a-cylinder position="1.3 0.5 -0.8" radius="0.07" height="1" color="#8B5A2B"></a-cylinder>
+<a-cylinder position="-1.3 0.5 0.8" radius="0.07" height="1" color="#8B5A2B"></a-cylinder>
+<a-cylinder position="1.3 0.5 0.8" radius="0.07" height="1" color="#8B5A2B"></a-cylinder>
+</a-entity>
+
+<!-- CHAIR LEFT BESIDE TABLE -->
+<a-entity position="-3 0 0 " rotation ="90">
+<a-box position="0 0.45 0" width="0.6" height="0.1" depth="0.6" color="#795548"></a-box>
+<a-cylinder position="-0.25 0.22 -0.25" radius="0.04" height="0.4" color="#5D4037"></a-cylinder>
+<a-cylinder position="0.25 0.22 -0.25" radius="0.04" height="0.4" color="#5D4037"></a-cylinder>
+<a-cylinder position="-0.25 0.22 0.25" radius="0.04" height="0.4" color="#5D4037"></a-cylinder>
+<a-cylinder position="0.25 0.22 0.25" radius="0.04" height="0.4" color="#5D4037"></a-cylinder>
+<a-box position="0 0.9 -0.25" width="0.6" height="0.6" depth="0.1" color="#6D4C41"></a-box>
+</a-entity>
+
+<!-- CHAIR RIGHT BESIDE TABLE -->
+<a-entity position="3 0 0">
+<a-box position="0 0.45 0" width="0.6" height="0.1" depth="0.6" color="#795548"></a-box>
+<a-cylinder position="-0.25 0.22 -0.25" radius="0.04" height="0.4" color="#5D4037"></a-cylinder>
+<a-cylinder position="0.25 0.22 -0.25" radius="0.04" height="0.4" color="#5D4037"></a-cylinder>
+<a-cylinder position="-0.25 0.22 0.25" radius="0.04" height="0.4" color="#5D4037"></a-cylinder>
+<a-cylinder position="0.25 0.22 0.25" radius="0.04" height="0.4" color="#5D4037"></a-cylinder>
+<a-box position="0 0.9 -0.25" width="0.6" height="0.6" depth="0.1" color="#6D4C41"></a-box>
+</a-entity>
+
+<a-entity position="-0.6 1.15 0">
+<a-cylinder radius="0.18" height="0.4" color="#0A8F2A"></a-cylinder>
+<a-text value="MILO" color="white" position="-0.1 0.05 0.19" width="1"></a-text>
+</a-entity>
+
+<a-entity position="0.2 1.15 0">
+<a-cylinder radius="0.18" height="0.35" color="#FFFFFF"></a-cylinder>
+<a-text value="MILK" color="#0047AB" position="-0.12 0.05 0.19" width="1"></a-text>
+</a-entity>
+
+<a-entity position="-0.2 1.12 0.4">
+<a-cylinder radius="0.1" height="0.2" color="#B3E5FC"></a-cylinder>
+</a-entity>
+
+<a-entity position="0.5 1.12 -0.3">
+<a-cylinder radius="0.1" height="0.2" color="#F8BBD0"></a-cylinder>
+</a-entity>
+
+<a-text value="SLEEN GRAPHICS" color="#4E342E" position="-1 3 -3" width="3"></a-text>
+
+</a-scene>
+</body>
+</html>
